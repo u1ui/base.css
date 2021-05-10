@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Level.css TEST</title>
+
+  <script src="../../css-norm/tests/test.js" type=module></script>
+
+  <link rel="stylesheet" href="../../css-norm/norm.css">
+  <link rel="stylesheet" href="../base.css">
+
+
+  <style>
+    body {
+      display: grid;
+      gap:1rem;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+    body > * {
+      background:#eee;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<section>
+  <div>
+    <h1>Header level 1 in a Section Element</h1>
+    <p>Some Text in a Paragraph Some Text in a Paragraph Some Text in a Paragraph</p>
+
+    <h2>Header level 2 Some more Text to test line-height</h2>
+    <p>Some Text in a Paragraph Some Text in a Paragraph Some Text in a Paragraph</p>
+
+    <h3>Header level 3 Some more Text to test line-height Some more Text to test line-height</h3>
+    <p>Some Text in a Paragraph Some Text in a Paragraph Some Text in a Paragraph</p>
+
+    <h4>Header level 4 Some more Text to test line-height Some more Text to test line-height</h4>
+    <p>Some Text in a Paragraph Some Text in a Paragraph Some Text in a Paragraph</p>
+
+    <h5>Header level 5 Some more Text to test line-height Some more Text to test line-height</h5>
+    <p>Some Text in a Paragraph Some Text in a Paragraph Some Text in a Paragraph</p>
+
+    <h6>Header level 6 Some more Text to test line-height Some more Text to test line-height Some more Text to test line-height</h6>
+    <p>Some Text in a Paragraph Some Text in a Paragraph Some Text in a Paragraph</p>
+  </div>
+</section>
+
+<section>
+  <table class=tableDemo>
+    <caption>Caption</caption>
+      <colgroup>
+        <col>
+        <col span="2" class="batman">
+      </colgroup>
+    <thead>
+      <tr>
+          <th>Head
+          <th>Batman
+          <th>Robin
+    <tbody>
+      <tr>
+        <th>Skill
+        <td>Smarts</td>
+        <td>Dex, acrobat</td>
+      <tr>
+        <th>Skill
+        <td>Smarts</td>
+        <td>Dex, acrobat</td>
+    <tfoot>
+      <tr>
+        <th>Total
+        <td>2</td>
+        <td>3</td>
+  </table>
+  <style>
+  .tableDemo {
+    border:1px solid;
+  }
+  .tableDemo td , .tableDemo th {
+    border:1px solid;
+  }
+  .tableDemo .batman {
+    background-color:#ddd;
+  }
+  </style>
+</section>
+
+<section>
+  <style>
+    label {
+      display:block;
+    }
+  </style>
+  <form action="#forms">
+    <fieldset>
+      <legend>Welcome to the form</legend>
+        <label>
+          <input type="hidden"> Hidden
+        </label>
+        <label>
+          <input type="text"> Text
+        </label>
+        <label>
+          <input type="text" value="You can't change this" readonly> Text (readonly)
+        </label>
+        <label>
+          <input type="text" value="This is not available" disabled> Text (disabled)
+        </label>
+        <label>
+          <input type="search"> Search
+        </label>
+        <label>
+          <input type="tel"> Telephone
+        </label>
+        <label>
+          <input type="url" value="invalid should not be red (firefox)"> URL
+        </label>
+        <label>
+          <input type="email"> Email
+        </label>
+        <label>
+          <input type="password"> Password
+        </label>
+        <label>
+          <input type="date"> Date
+        </label>
+        <label>
+          <input type="month"> Month
+        </label>
+        <label>
+          <input type="week"> Week
+        </label>
+        <label>
+          <input type="time"> Time
+        </label>
+        <label>
+          <input type="datetime-local"> Datetime-local
+        </label>
+        <label>
+          <input type="number"> Number
+        </label>
+        <label>
+          <input type="range"> Range
+        </label>
+        <label>
+          <input type="color"> Color
+        </label>
+        <label>
+          <input type="checkbox" name="checkbox"> Checkbox 1
+        </label>
+        <label>
+          <input type="checkbox" name="checkbox"> Checkbox 2
+        </label>
+        <label>
+           <input type="checkbox" name="checkbox" disabled> Checkbox 3 disabled
+        </label>
+        <label>
+          <input type="radio" name="radio"> Radio 1
+        </label>
+        <label>
+          <input type="radio" name="radio"> Radio 2
+        </label>
+        <label>
+          <input type="radio" name="radio" disabled> Radio 3 disabled
+        </label>
+        <label>
+          <select name="select">
+            <option value="1">Option 1
+            <option value="2">Option 2
+            <option value="3">Option 3
+          </select> Select
+        </label>
+        <label>
+          <select name="select-size" size=5>
+            <option value="1">Option 1
+            <option value="2">Option 2
+            <option value="3">Option 3
+            <option value="4">Option 4
+            <option value="5">Option 5
+            <option value="6">Option 6
+            <option value="7">Option 7
+            <option value="8">Option 8
+          </select> Select (size)
+        </label>
+        <label>
+          <select name="select-multiple" multiple>
+            <option value="1">Option 1
+            <option value="2">Option 2
+            <option value="3">Option 3
+          </select> Select (multiple)
+        </label>
+        <label>
+          <select name="select-optgroup">
+            <optgroup label="Group 1">
+              <option value="1">Option 1
+              <option value="2">Option 2
+            </optgroup>
+            <optgroup label="Group 2">
+              <option value="3">Option 3
+              <option value="4">Option 4
+              <option value="5">Option 5
+            </optgroup>
+          </select> Select with optgroup
+        </label>
+        <label>
+          <input name="datalist" list="datalist"> Datalist
+          <datalist id=datalist>
+            <option value="Option 1">
+            <option value="Option 2">
+            <option value="Option 3">
+            <option value="Option 4">
+          </datalist>
+        </label>
+        <label>
+          <textarea name="textarea"></textarea> Textarea
+        </label>
+        <label>
+          <input type="file"> File (single)
+        </label>
+        <label>
+          <input type="file" id="input-file-multiple" multiple> File (multiple)
+        </label>
+        <button type="button">I'm a Button</button> <input> <select><option>1</select>
+        <br>
+        <button type="button" disabled>I'm a disabled Button</button>
+      </p>
+    </fieldset>
+  </form>
+</section>
+
+<section>
+  HR:
+  <hr>
+  <a href="#">A Element</a>
+  <nav>
+    <ul>
+      <li>
+        <a href="#">A inside NAV</a>
+        <ul>
+          <li><a href="#">A inside NAV</a>
+          <li><a href="#">A inside NAV</a>
+          <li><a href="#">A inside NAV</a>
+        </ul>
+      </li>
+      <li><a href="#">A inside NAV</a>
+      <li><a href="#">A inside NAV</a>
+    </ul>
+  </nav>
+  UL LI:
+  <ul>
+    <li>
+      First
+      <ul>
+        <li>1.1 LI
+        <li>1.2 LI
+      </ul>
+    </li>
+    <li>2.0 LI
+  </ul>
+VeryLongTextShouldBreakVeryLongTextShouldBreakVeryLongTextShouldBreak
+  <br>
+  IMG too big scales down:
+  <br>
+  <img width=1000 height=500 style="background:#eee">
+  <br>
+  AUDIO / VIDEO / IFRAME width 100%:
+  <br>
+  <audio controls="">audio</audio>
+  <br>
+  VIDEO gray bg in firefox:
+  <br>
+  <video controls="">video</video>
+  <br>
+  IFRAME:
+  <br>
+  <iframe></iframe>
+  <br>
+
+  Dialog:
+  <br>
+  <button onclick="this.nextElementSibling.toggleAttribute('open')">toggle dialog</button>
+  <dialog id="favDialog">
+    <form method="dialog">
+      <p>
+        <label>Favorite animal:
+          <select>
+            <option></option>
+            <option>Brine shrimp</option>
+            <option>Red panda</option>
+            <option>Spider monkey</option>
+          </select>
+        </label>
+      </p>
+      <menu>
+        <button value="cancel">Cancel</button>
+        <button id="confirmBtn" value="default">Confirm</button>
+        <button type=button onclick="this.closest('dialog').append('test '.repeat(10000))">Add lot of contents</button>
+      </menu>
+    </form>
+  </dialog>
+
+</section>
+
+
+
+<section>
+    prefere-reduce-motion:
+    <hr>
+
+    <div class=nomotionTest>
+        on hover animatetd div
+    </div>
+    <style>
+    .nomotionTest {
+        transition: 1s linear;
+    }
+    .nomotionTest:hover {
+        opacity:.5;
+        background-color:red;
+    }
+
+
+  </section>

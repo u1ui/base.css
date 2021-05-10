@@ -1,0 +1,122 @@
+@import "./print.css" print;
+@import "./nomotion.css" prefers-reduced-motion;
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height:var(--line-height);
+}
+html {
+    word-break:break-word;
+    overflow-wrap:break-word;
+    font-family:Arial, Helvetica, sans-serif;
+    -moz-tab-size: 4;
+	tab-size: 4;
+    line-height:1.3;
+    --line-height: calc(.7em + .8rem);
+}
+body {
+    margin:auto;
+    min-block-size:100vh;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top:1em;
+    margin-bottom:1em;
+}
+hr {
+    border-style:solid;
+    border-width:0 0 1px 0;
+}
+img,
+svg,
+video,
+canvas {
+    max-width:100%;
+    object-fit:cover;
+    height: auto;
+}
+table {
+    border-collapse: collapse;
+	font-variant-numeric: tabular-nums;
+}
+th {
+    text-align:inherit;
+}
+audio, video {
+	width: 100%;
+}
+video {
+    background-color:#aaa;
+}
+iframe {
+    width:100%;
+}
+nav a {
+    text-decoration:none;
+}
+nav li {
+    list-style: none;
+}
+nav ul {
+    padding-left:1.5em;
+}
+nav > ul {
+    padding-left:0;
+}
+summary {
+    cursor:pointer;
+}
+
+/* form */
+
+/*
+.button: milligram
+.btn: bootstrap, mincss, basscss
+*/
+label, button:not([disabled]), [type=checkbox], [type=radio], [type=file], .btn {
+    cursor:pointer;
+}
+input, textarea, select, button, .btn {
+    padding:.2em;
+    border:1px solid rgba(0,0,0,.5);
+    font-family: inherit;
+    font-size: inherit;
+    line-height:1.3;
+}
+input, textarea, select {
+    border-radius:0;
+    line-height:1.3;
+    font-family:inherit;
+}
+button, .btn {
+    padding-left:.5em;
+    padding-right:.5em;
+}
+select {
+    cursor:pointer;
+}
+input, textarea {
+    width:11rem;
+}
+textarea {
+    resize: vertical;
+}
+[type=radio], [type=checkbox], [type=file], todo[type=datetime-local], todo[type=date], todo[type=time] {
+    width:auto;
+}
+
+
+/* beta */
+textarea {
+    vertical-align: baseline;
+    vertical-align: -webkit-baseline-middle;
+    xdisplay: inline-table; /* chrome makes align with the first line, but unresizable */
+}
+/**
+[type=number] {
+    text-align: right;
+}
+dialog {
+    overscroll-behavior: contain; /* or "none"? Prevent scroll chaning. -safari. ok? * /
+}
+*/
