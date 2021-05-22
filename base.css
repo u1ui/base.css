@@ -5,6 +5,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     line-height:var(--line-height);
+    background-repeat: no-repeat;
 }
 html {
     word-break:break-word;
@@ -17,7 +18,11 @@ html {
 }
 body {
     margin:auto;
-    min-block-size:100vh;
+
+    zzz-min-block-size:100vh;
+    block-size: -moz-available;
+    block-size: -webkit-fill-available;
+    block-size: stretch;
 }
 h1, h2, h3, h4, h5, h6 {
     margin-top:1em;
@@ -104,19 +109,3 @@ textarea {
 [type=radio], [type=checkbox], [type=file], todo[type=datetime-local], todo[type=date], todo[type=time] {
     width:auto;
 }
-
-
-/* beta */
-textarea {
-    vertical-align: baseline;
-    vertical-align: -webkit-baseline-middle;
-    xdisplay: inline-table; /* chrome makes align with the first line, but unresizable */
-}
-/**
-[type=number] {
-    text-align: right;
-}
-dialog {
-    overscroll-behavior: contain; /* or "none"? Prevent scroll chaning. -safari. ok? * /
-}
-*/

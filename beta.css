@@ -1,0 +1,21 @@
+*, ::before, ::after {
+    /* or cover? */
+    background-size: contain;
+    background-position: 50% 50%;
+}
+
+textarea {
+    vertical-align: baseline;
+    vertical-align: -webkit-baseline-middle;
+    xdisplay: inline-table; /* chrome makes align with the first line, but unresizable */
+}
+[type=number] {
+    text-align: right;
+}
+dialog {
+    /*
+        or "none"? Prevent scroll chaning. -safari. ok?
+        overscroll-behavior does not inherit!
+    */
+    overscroll-behavior: contain;
+}
