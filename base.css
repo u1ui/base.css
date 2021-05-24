@@ -1,6 +1,3 @@
-@import "./print.css" print;
-@import "./nomotion.css" prefers-reduced-motion;
-
 *, ::before, ::after {
     box-sizing: border-box;
     scroll-behavior: smooth;
