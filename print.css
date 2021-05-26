@@ -1,3 +1,8 @@
+/*
+resources:
+- https://github.com/h5bp/main.css/blob/main/src/_print.css
+*/
+
 *, ::before, ::after {
     xbackground: #fff !important;
     xcolor: #000 !important;
@@ -12,10 +17,7 @@ html {
     /*font-size:12pt; ?? */
 }
 
-
-header ,
-footer ,
-sidebar {
+header, footer, sidebar {
     display: none;
 }
 
@@ -23,8 +25,7 @@ a:link:after {
     content: " (" attr(href) ") ";
     font-size:.9em;
 }
-a[href^="#"]:after,
-a[href^="javascript:"]:after {
+a[href^="#"]:after, a[href^="javascript:"]:after {
     content: "";
 }
 
