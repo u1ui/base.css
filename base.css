@@ -54,7 +54,8 @@ nav li { list-style: none; }
 nav ul { padding-left:1.5em; }
 nav > ul { padding-left:0; }
 
-summary, label, button:not([disabled]), [type=checkbox], [type=radio], [type=file], .btn {
+/* clickable */
+select, summary, label, button:not([disabled]), [type=checkbox], [type=radio], [type=file], .btn {
     cursor:pointer;
 }
 /* form */
@@ -68,15 +69,14 @@ input, textarea, select, button, .btn {
     in chrome:1.22, in ff:1.17 (best fit line-height:1.19?)
     "normal" does not work in chrome unlike appereance:none
     */
-    line-height:normal;
+    --line-height:normal;
 }
 button, .btn {
     padding-left:.7em;
     padding-right:.7em;
 }
-select { cursor:pointer; }
-input, textarea { width:13rem; }
 textarea { resize: vertical; }
+input, textarea { width:13rem; }
 [type=radio], [type=checkbox], [type=file], todo[type=datetime-local], todo[type=date], todo[type=time] {
     width:auto;
 }
