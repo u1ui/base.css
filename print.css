@@ -4,8 +4,6 @@ resources:
 */
 
 *, ::before, ::after {
-    xbackground: #fff !important;
-    xcolor: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
 }
@@ -17,7 +15,7 @@ html {
     /*font-size:12pt; ?? */
 }
 
-header, footer, sidebar {
+header, footer {
     display: none;
 }
 

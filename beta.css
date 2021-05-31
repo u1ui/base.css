@@ -19,3 +19,10 @@ dialog {
     */
     overscroll-behavior: contain;
 }
+
+script, style { /* if displaying script or javascript */
+    white-space: pre;
+    font-family: monospace;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
