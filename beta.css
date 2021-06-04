@@ -26,3 +26,8 @@ script, style { /* if displaying script or javascript */
     margin-block-start: 1em;
     margin-block-end: 1em;
 }
+
+legend { /* make padding font dependent */
+    padding-left: .3em;
+    padding-right: .3em;
+}
