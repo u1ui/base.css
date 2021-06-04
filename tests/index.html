@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="../../norm.css/norm.css">
   <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="../beta.css">
 
 
   <style>
@@ -144,6 +145,18 @@
           <input type="number"> Number
         </label>
         <label>
+          <input name="datalist" list="datalist"> Datalist
+          <datalist id=datalist>
+            <option value="Option 1">
+            <option value="Option 2">
+            <option value="Option 3">
+            <option value="Option 4">
+          </datalist>
+        </label>
+        <label>
+          <textarea name="textarea"></textarea> Textarea
+        </label>
+        <label>
           <input type="range"> Range
         </label>
         <label>
@@ -205,18 +218,6 @@
               <option value="5">Option 5
             </optgroup>
           </select> Select with optgroup
-        </label>
-        <label>
-          <input name="datalist" list="datalist"> Datalist
-          <datalist id=datalist>
-            <option value="Option 1">
-            <option value="Option 2">
-            <option value="Option 3">
-            <option value="Option 4">
-          </datalist>
-        </label>
-        <label>
-          <textarea name="textarea"></textarea> Textarea
         </label>
         <label>
           <input type="file"> File (single)
@@ -308,20 +309,32 @@ VeryLongTextShouldBreakVeryLongTextShouldBreakVeryLongTextShouldBreak
 
 
 <section>
-    prefere-reduce-motion:
-    <hr>
+  prefere-reduce-motion:
+  <hr>
 
-    <div class=nomotionTest>
-        on hover animatetd div
-    </div>
-    <style>
-    .nomotionTest {
-        transition: 1s linear;
-    }
-    .nomotionTest:hover {
-        opacity:.5;
-        background-color:red;
-    }
-    </style>
+  <div class=nomotionTest>
+      on hover animatetd div
+  </div>
+  <style>
+  .nomotionTest {
+      transition: 1s linear;
+  }
+  .nomotionTest:hover {
+      opacity:.5;
+      background-color:red;
+  }
+  </style>
+
+</section>
+
+<section>
+  styled script, style tags
+  <hr>
+  <h3>script-tag</h3>
+  <script style="display:block">console.log('Hello World');</script>
+  <h3>style-tag</h3>
+  <style style="display:block" contenteditable>.myElement {
+  color:red;
+}</style>
 
 </section>
