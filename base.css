@@ -8,7 +8,7 @@ html {
     word-break:break-word;
     overflow-wrap:break-word;
     font-family:Arial, Helvetica, sans-serif;
-    -moz-tab-size: 4;
+    -moz-tab-size: 4; /* zzz firefox 91 */
 	tab-size: 4;
     --line-height: calc(.7em + .8rem);
 	/* consistent y-scrollbar on all pages and on dynamic content
