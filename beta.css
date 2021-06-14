@@ -12,13 +12,15 @@ textarea {
 [type=number] {
     text-align: right;
 }
+
+/*
 dialog {
-    /*
-        or "none"? Prevent scroll chaning. -safari. ok?
-        overscroll-behavior does not inherit!
-    */
+    or "none"? Prevent scroll chaning. -safari. ok?
+    overscroll-behavior does not inherit!?
+    better if position:fixed...
     overscroll-behavior: contain;
 }
+*/
 
 script, style { /* if displaying script or javascript */
     white-space: pre;
