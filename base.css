@@ -41,7 +41,7 @@ img, svg, video, canvas {
 /* table */
 table {
     border-collapse: collapse;
-    border-spacing: 0; /* if you don't want to collapse, the border-spacing defaults to 0 */
+    border-spacing: 0; /* if not collapsed, border-spacing defaults to 0 */
 	font-variant-numeric: tabular-nums;
 }
 th { text-align: inherit; }
@@ -60,6 +60,7 @@ nav > ul { padding-left:0; }
 select, summary, label, button:not([disabled]), [type=checkbox], [type=radio], [type=file], .btn {
     cursor:pointer;
 }
+
 /* form */
 input, textarea, select, button, .btn {
     padding:.2em;
@@ -80,4 +81,4 @@ button, .btn {
 }
 textarea { resize: vertical; }
 input, textarea { width:13rem; }
-[type=radio], [type=checkbox], [type=file] { width:auto; }  /* todo: incomplete */
+[type=radio], [type=checkbox], [type=file] { width:auto; }  /* todo: incomplete? */
