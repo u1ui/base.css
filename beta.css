@@ -10,7 +10,7 @@ textarea {
     xdisplay: inline-table; /* chrome makes align with the first line, but unresizable */
 }
 [type=number] {
-    text-align: right;
+    text-align: end;
 }
 
 /*
