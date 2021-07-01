@@ -2,6 +2,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     line-height:var(--line-height);
+    /* needed? letter-spacing:var(--letter-spacing); */
     background-repeat: no-repeat;
 }
 html {
@@ -11,6 +12,7 @@ html {
     -moz-tab-size: 4; /* zzz firefox 91 */
 	tab-size: 4;
     --line-height: calc(.7em + .8rem);
+    /* needed? --letter-spacing: normal; */
 	/* consistent y-scrollbar on all pages and on dynamic content
 	when scrollbar-gutter is supported test and use:
 	overflow-y: auto;
