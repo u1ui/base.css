@@ -15,6 +15,7 @@
 
   <style>
     body {
+      border:10px solid green;
       display: grid;
       gap:1rem;
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -33,8 +34,11 @@
     <h1>Header level 1 in a Section Element</h1>
     <p>Some Text in a Paragraph Some Text in a Paragraph Some Text in a Paragraph</p>
 
-    <h2>Header level 2 Some more Text to test line-height</h2>
-    <p>Some Text in a Paragraph Some Text in a Paragraph Some Text in a Paragraph</p>
+    <h2>The Min-Height of the body Element<br>should fill the Viewport</h2>
+    <p onclick="var b = document.body; b.className='hideContents'; setTimeout(()=>b.className='', 2000)">
+      Body (with the green border) should fill the hole Viewport (min-height:100%). To test it you can click on this Text
+    </p>
+    <style> body.hideContents > * { display:none; } </style>
 
     <h3>Header level 3 Some more Text to test line-height Some more Text to test line-height</h3>
     <p>Some Text in a Paragraph Some Text in a Paragraph Some Text in a Paragraph</p>
@@ -306,26 +310,6 @@ VeryLongTextShouldBreakVeryLongTextShouldBreakVeryLongTextShouldBreak
 
 </section>
 
-
-
-<section>
-  prefere-reduce-motion:
-  <hr>
-
-  <div class=nomotionTest>
-      on hover animatetd div
-  </div>
-  <style>
-  .nomotionTest {
-      transition: 1s linear;
-  }
-  .nomotionTest:hover {
-      opacity:.5;
-      background-color:red;
-  }
-  </style>
-
-</section>
 
 <section>
   styled script, style tags

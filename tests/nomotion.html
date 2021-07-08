@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Level.css TEST</title>
+
+  <script src="../../norm.css/tests/test.js" type=module></script>
+
+  <link rel="stylesheet" href="../../norm.css/norm.css">
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="../nomotion.css">
+
+
+  <style>
+    body {
+      display: grid;
+      gap:1rem;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+    body > * {
+      background:#eee;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+<section>
+    <h2>prefere-reduce-motion:</h2>
+    <hr>
+    <a target=_blank href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion#user_preferences">See how you can disable motions for your OS</a>
+
+
+    <h3>Transition:</h3>
+    <div class=nomotionTest>
+        on hover background-color animated
+    </div>
+    <style>
+    .nomotionTest {
+        transition: 1s linear;
+    }
+    .nomotionTest:hover {
+        opacity:.5;
+        background-color:red;
+    }
+    </style>
+
+    <h3>Animation:</h3>
+    <div class="animation">animated box</div>
+    <style>
+    .animation {
+        background-color: #306;
+        color: #fff;
+        font: 1.2em sans-serif;
+        width: 10em;
+        padding: 1em;
+        border-radius: 1em;
+        text-align: center;
+    }
+    .animation {
+        animation: pulse 1s linear infinite both;
+    }
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        25% { transform: scale(.9); }
+        50% { transform: scale(1); }
+        75% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    </style>
+
+    <h3>Scrolling not smooth</h3>
+    <a href="#top">top</a> <a href="#bottom">bottom</a>
+    <div style="overflow:auto; max-height:6rem; border:1px solid blue">
+        <div id=top>top</div>
+        Scrolling should not be smooth on<br>
+        ...<br>...<br>...<br>...<br>
+        <div id=bottom>bottom</div>
+    </div>
+
+
+
+  </section>

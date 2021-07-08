@@ -20,7 +20,7 @@ html {
     scrollbar-gutter: stable;
     */
     overflow-y: scroll;
-    min-block-size: 100%;
+    block-size: 100%;
 }
 body {
     margin:auto;
