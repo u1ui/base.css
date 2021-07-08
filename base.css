@@ -43,8 +43,8 @@ img, svg, video, canvas {
 
 /* table */
 table {
-    border-collapse: collapse;
-    border-spacing: 0; /* if not collapsed, border-spacing defaults to 0 */
+	border-collapse: collapse;
+	border-spacing: 0; /* if not collapsed, border-spacing defaults to 0 */
 	font-variant-numeric: tabular-nums;
 }
 th { text-align: inherit; }
