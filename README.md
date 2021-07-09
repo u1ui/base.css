@@ -18,6 +18,10 @@ Usefull css defaults
 - IE11 not supported
 - There is a beta.css for styles not yet definite
 
+## Demos
+https://raw.githack.com/u1ui/base.css/main/tests/base.css.html  
+https://raw.githack.com/u1ui/base.css/main/tests/nomotion.html  
+
 
 # Resources
 
@@ -26,7 +30,3 @@ https://github.com/csstools/sanitize.css/blob/main/sanitize.css
 https://github.com/adamgruber/opinionate.css/blob/master/opinionate.css
 
 https://github.com/elad2412/the-new-css-reset/blob/main/css/reset.css
-
-## Demo
-https://raw.githack.com/u1ui/base.css/main/tests/index.html  
-
