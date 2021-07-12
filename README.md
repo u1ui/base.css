@@ -22,7 +22,6 @@ Usefull css defaults
 https://raw.githack.com/u1ui/base.css/main/tests/base.css.html  
 https://raw.githack.com/u1ui/base.css/main/tests/nomotion.html  
 
-
 # Resources
 
 https://github.com/csstools/sanitize.css/blob/main/sanitize.css
