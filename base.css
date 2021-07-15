@@ -16,9 +16,10 @@ html {
     /* needed? --letter-spacing: normal; */
     /* consistent y-scrollbar on all pages and on dynamic content
     when scrollbar-gutter is supported test and use:
+    scrollbar-gutter: stable; // both always?
     overflow-y: auto;
-    scrollbar-gutter: stable;
     */
+
     overflow-y: scroll;
     block-size: 100%;
 }

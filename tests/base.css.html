@@ -19,9 +19,18 @@
       display: grid;
       gap:1rem;
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+      xcolumn-width:25em;
     }
-    body > * {
+    body > section {
+      xwidth:30rem;
+      xdisplay:inline-block;
+      xwidth:100%;
+      xmargin-bottom:1rem;
       background:#eee;
+    }
+    label {
+      display:block;
     }
   </style>
 
@@ -32,9 +41,9 @@
 <section>
   <div>
     <h1>Header level 1 in a Section Element</h1>
-    <p>Some Text in a Paragraph Some Text in a Paragraph Some Text in a Paragraph</p>
+    <p>Default font-size for h1 is like h2 if it's inside a section. This is by design, but it is rather not useful and confusing.</p>
 
-    <h2>The Min-Height of the body Element<br>should fill the Viewport</h2>
+    <h2>The Min-Height of the body Element should fill the Viewport</h2>
     <p onclick="var b = document.body; b.className='hideContents'; setTimeout(()=>b.className='', 2000)">
       Body (with the green border) should fill the hole Viewport (min-height:100%). To test it you can click on this Text
     </p>
@@ -95,11 +104,6 @@
 </section>
 
 <section>
-  <style>
-    label {
-      display:block;
-    }
-  </style>
   <form action="#forms">
     <fieldset>
       <legend>Welcome to the form</legend>
@@ -166,6 +170,14 @@
         <label>
           <input type="color"> Color
         </label>
+    </fieldset>
+  </form>
+</section>
+
+<section>
+  <form action="#forms">
+    <fieldset>
+      <legend>Welcome to the form</legend>
         <label>
           <input type="checkbox" name="checkbox"> Checkbox 1
         </label>
@@ -232,7 +244,6 @@
         <button type="button">I'm a Button</button> <input> <select><option>1</select>
         <br>
         <button type="button" disabled>I'm a disabled Button</button>
-      </p>
     </fieldset>
   </form>
 </section>
