@@ -3,30 +3,34 @@ resources:
 - https://github.com/h5bp/main.css/blob/main/src/_print.css
 */
 
-*, ::before, ::after {
-    box-shadow: none !important;
-    text-shadow: none !important;
-}
+@media print {
 
-html {
-    --width:auto;
-    --color-bg:#fff;
-    --color-text:#000;
-    /*font-size:12pt; ?? */
-}
+    *, ::before, ::after {
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
 
-header, footer {
-    display: none;
-}
+    html {
+        --width:auto;
+        --color-bg:#fff;
+        --color-text:#000;
+        /*font-size:12pt; ?? */
+    }
 
-a:link:after {
-    content: " (" attr(href) ") ";
-    font-size:.9em;
-}
-a[href^="#"]:after, a[href^="javascript:"]:after {
-    content: "";
-}
+    header, footer {
+        display: none;
+    }
 
-a:link {
-    text-decoration: underline;
+    a:link:after {
+        content: " (" attr(href) ") ";
+        font-size:.9em;
+    }
+    a[href^="#"]:after, a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    a:link {
+        text-decoration: underline;
+    }
+
 }
