@@ -42,6 +42,17 @@ img, svg, video, canvas {
     height: auto;
 }
 
+audio, video { width: 100%; }
+video { background-color:#aaa; }
+iframe { width:100%; }
+
+script, style { /* if displaying script or javascript */
+    white-space: pre;
+    font-family: monospace;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
 /* table */
 table {
     border-collapse: collapse;
@@ -50,9 +61,6 @@ table {
 }
 th { text-align: inherit; }
 
-audio, video { width: 100%; }
-video { background-color:#aaa; }
-iframe { width:100%; }
 
 /* nav */
 nav a { text-decoration:none; } /* display:block? color:inherit? */
