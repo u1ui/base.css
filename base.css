@@ -59,7 +59,10 @@ table {
     border-spacing: 0; /* if not collapsed, border-spacing defaults to 0 */
     font-variant-numeric: tabular-nums;
 }
-th { text-align: inherit; }
+th {
+    text-align: inherit;
+    text-align: -webkit-match-parent; /* inherit not working in safari */
+}
 
 
 /* nav */
