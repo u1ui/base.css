@@ -333,3 +333,22 @@ VeryLongTextShouldBreakVeryLongTextShouldBreakVeryLongTextShouldBreak
 }</style>
 
 </section>
+
+
+<section>
+  Smooth scrolling (on every element)
+  <hr>
+  <a href="#">go to top of this page</a><br>
+  <a href="#divbottom">to bottom of div</a><br>
+  <a href="#divtop">to top of div</a>
+  <div style="max-height:100px; overflow:auto; padding:1em; border:1px solid">
+    <a id=divtop href="#divbottom">top</a>
+    text...<br>
+    text...<br>
+    text...<br>
+    text...<br>
+    text...<br>
+    text...<br>
+    <a id=divbottom href="#divtop">bottom</a>
+  </div>
+</section>
