@@ -13,16 +13,7 @@ textarea {
     text-align: end;
 }
 
-/*
-dialog {
-    or "none"? Prevent scroll chaning. -safari. ok?
-    overscroll-behavior does not inherit!?
-    better if position:fixed...
-    overscroll-behavior: contain;
-}
-*/
-
-legend { /* make padding font dependent */
+legend { /* make padding font dependent? */
     padding-left: .3em;
     padding-right: .3em;
 }
