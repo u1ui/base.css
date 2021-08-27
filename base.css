@@ -22,6 +22,7 @@ html {
 
     overflow-y: scroll;
     block-size: 100%;
+    font-size: 62.5%;
 }
 body {
     margin:auto;
