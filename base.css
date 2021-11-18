@@ -92,6 +92,7 @@ input, textarea, select, button, .btn {
 button, .btn {
     padding-left:.7em;
     padding-right:.7em;
+    /* text-decoration:none; if a.btn, or a button zzz in classless*/
 }
 textarea { resize: vertical; }
 input, textarea { width:13rem; }
