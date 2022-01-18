@@ -9,9 +9,9 @@ html {
     word-break:break-word;
     overflow-wrap:break-word;
     font-family:Arial, Helvetica, sans-serif;
-    -moz-tab-size: 4; /* zzz firefox 91 */
     tab-size: 4;
-    --line-height: calc(.7em + .8rem);
+    /* --line-height: calc(.7em + .8rem); zzz, too small line-height for big text */
+    --line-height: calc(1em + .5rem);
     -webkit-tap-highlight-color: transparent;
     /* needed? --letter-spacing: normal; */
     /* consistent y-scrollbar on all pages and on dynamic content
