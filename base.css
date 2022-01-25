@@ -97,3 +97,4 @@ button, .btn {
 textarea { resize: vertical; }
 input, textarea { width:13rem; }
 [type=radio], [type=checkbox], [type=file] { width:auto; }  /* todo: incomplete? */
+[type=range] { vertical-align:middle }
