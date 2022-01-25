@@ -72,7 +72,7 @@ nav ul { padding-left:1.5em; }
 nav > ul { padding-left:0; }
 
 /* clickable */
-select, summary, label, button:not([disabled]), [type=checkbox], [type=radio], [type=file], .btn {
+select, summary, label, button:not(:disabled), [type=checkbox], [type=radio], [type=file], .btn {
     cursor:pointer;
 }
 
