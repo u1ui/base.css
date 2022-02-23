@@ -86,7 +86,8 @@ input, textarea, select, button, .btn {
     in chrome:1.22, in ff:1.17 (best fit line-height:1.19?)
     "normal" does not work in chrome unlike appereance:none
     */
-    line-height:normal;
+    /* line-height:normal; zzz */
+    line-height: var(--line-height);
     --line-height:normal;
 }
 button, .btn {
