@@ -38,13 +38,21 @@ hr {
 }
 img, svg, video, canvas {
     max-width:100%;
+    max-width:-webkit-fill-available;
+    max-width:-moz-available;
+    max-width:stretch;
+
     object-fit:cover;
     height: auto;
 }
 
-audio, video { width: 100%; }
+audio, video, iframe {
+    width: 100%;
+    max-width:-webkit-fill-available;
+    max-width:-moz-available;
+    max-width:stretch;
+}
 video { background-color:#aaa; }
-iframe { width:100%; }
 
 script, style { /* if displaying script or javascript */
     white-space: pre;
