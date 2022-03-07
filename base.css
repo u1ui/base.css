@@ -38,19 +38,22 @@ hr {
 }
 img, svg, video, canvas {
     max-width:100%;
+    /* not needed if box-sizing:border-box!?
     max-width:-webkit-fill-available;
     max-width:-moz-available;
     max-width:stretch;
-
+    */
     object-fit:cover;
     height: auto;
 }
 
 audio, video, iframe {
     width: 100%;
-    max-width:-webkit-fill-available;
-    max-width:-moz-available;
-    max-width:stretch;
+    /* same as above?
+    width:-webkit-fill-available;
+    width:-moz-available;
+    width:stretch;
+    */
 }
 video { background-color:#aaa; }
 
