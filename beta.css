@@ -1,19 +1,18 @@
 *, ::before, ::after {
-    /* or cover? */
-    background-size: contain;
+    background-size: contain; /* or cover? */
     background-position: 50% 50%;
 }
 
 textarea {
     vertical-align: baseline;
     vertical-align: -webkit-baseline-middle;
-    xdisplay: inline-table; /* chrome makes align with the first line, but unresizable */
+    /* display: inline-table; chrome makes align with the first line, but unresizable */
 }
 [type=number] {
     text-align: end;
 }
 
-legend { /* make padding font dependent? */
+legend {
     padding-left: .3em;
     padding-right: .3em;
 }
