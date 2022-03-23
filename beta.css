@@ -16,3 +16,21 @@ legend {
     padding-left: .3em;
     padding-right: .3em;
 }
+
+/*
+todo?
+[inert] {
+    cursor: default !important;
+    pointer-events: none !important;
+  }
+
+  [inert], [inert] * {
+  -webkit-user-modify: read-only !important;
+     -moz-user-modify: read-only !important;
+          user-modify: read-only !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
+  }
+*/
