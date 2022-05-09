@@ -19,8 +19,8 @@ Usefull css defaults
 - There is a beta.css for styles not yet definite
 
 ## Demos
-https://raw.githack.com/u1ui/base.css/main/tests/base.css.html  
 https://raw.githack.com/u1ui/base.css/main/tests/nomotion.html  
+https://raw.githack.com/u1ui/base.css/main/tests/test.html  
 
 # Resources
 
