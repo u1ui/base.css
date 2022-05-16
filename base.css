@@ -20,7 +20,7 @@ html {
     -webkit-tap-highlight-color: transparent;
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; /* -apple-system needed anymore? */
-    font-size: calc(12px + .5vmin);
+    font-size: calc(12px + .3vw);
 
     scrollbar-gutter: stable;
     overflow-y: auto;
@@ -99,6 +99,7 @@ button, .btn {
     padding-right:.7em;
     /* text-decoration:none; if a.btn, or a button zzz in classless*/
 }
+select { background-color:Field; }
 textarea { resize: vertical; }
 input, textarea { width:13rem; }
 [type=radio], [type=checkbox], [type=file] { width:auto; }  /* todo: incomplete? */
