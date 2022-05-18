@@ -80,6 +80,10 @@ select, summary, label, button:not(:disabled), [type=checkbox], [type=radio], [t
     cursor:pointer;
 }
 
+[inert] {
+    opacity:.4;
+}
+
 /* form */
 input, textarea, select, button, .btn {
     padding:.2em;

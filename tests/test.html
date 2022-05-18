@@ -334,6 +334,24 @@ VeryLongTextShouldBreakVeryLongTextShouldBreakVeryLongTextShouldBreak
 
 </section>
 
+<section>
+  <h2>Inert-attribute</h2>
+
+  <label onchange="let el = this.nextElementSibling; el.toggleAttribute('inert')">
+    <input type=checkbox checked> Toggel inert
+  </label>
+
+  <div inert>
+    <a href="#">A</a>
+    <button>Button</button>
+    <input>
+    <select>
+      <option>Option</option>
+    </select>
+  </div>
+
+</section>
+
 
 <section>
   Smooth scrolling (on every element)
