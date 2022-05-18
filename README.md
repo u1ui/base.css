@@ -1,8 +1,8 @@
-# base.css
+# 🛠 base.css
 Usefull css defaults
 
 
-# Ussage
+## Ussage
 
 ```html
 <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/norm.css/norm.min.css">
@@ -11,7 +11,7 @@ Usefull css defaults
 <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/base.css/nomotion.min.css" media=prefers-reduced-motion>
 ```
 
-# Description
+## Description
 
 - lightweight
 - based on https://github.com/u1ui/norm.css.  
@@ -22,7 +22,7 @@ Usefull css defaults
 https://raw.githack.com/u1ui/base.css/main/tests/nomotion.html  
 https://raw.githack.com/u1ui/base.css/main/tests/test.html  
 
-# Resources
+## Resources
 
 https://github.com/csstools/sanitize.css/blob/main/sanitize.css
 
