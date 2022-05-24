@@ -41,23 +41,17 @@ hr {
 }
 img, svg, video, canvas {
     max-width:100%;
-    /* so that margins also work: test! not in ff,safari atm! *
     max-width:-moz-available;
     max-width:-webkit-fill-available;
     max-width:stretch;
-    */
-
-    /* max-width:stretch; not needed if box-sizing:border-box!? */
     object-fit:cover;
     height: auto;
 }
 audio, video, iframe {
     width: 100%;
-    /* so that margins also work: test! *
     width:-moz-available;
     width:-webkit-fill-available;
     width:stretch;
-    */
 }
 video { background-color:#aaa; }
 
