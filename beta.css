@@ -1,36 +1,14 @@
 *, ::before, ::after {
-    background-size: contain; /* or cover? */
-    background-position: 50% 50%;
+	background-size: contain; /* or cover? */
+	background-position: 50% 50%;
 }
-
 textarea {
-    vertical-align: baseline;
-    vertical-align: -webkit-baseline-middle;
-    /* display: inline-table; chrome makes align with the first line, but unresizable */
+	vertical-align: baseline;
+	vertical-align: -webkit-baseline-middle;
+	/* display: inline-table; chrome makes align with the first line, but unresizable */
 }
-[type=number] {
-    text-align: end;
-}
-
+[type=number] { text-align: end; }
 legend {
-    padding-left: .3em;
-    padding-right: .3em;
+	padding-left: .3em;
+	padding-right: .3em;
 }
-
-/*
-todo?
-[inert] {
-    cursor: default !important;
-    pointer-events: none !important;
-  }
-
-  [inert], [inert] * {
-  -webkit-user-modify: read-only !important;
-     -moz-user-modify: read-only !important;
-          user-modify: read-only !important;
-  -webkit-user-select: none !important;
-     -moz-user-select: none !important;
-      -ms-user-select: none !important;
-          user-select: none !important;
-  }
-*/

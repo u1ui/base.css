@@ -1,80 +1,69 @@
 *, ::before, ::after {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    line-height:var(--line-height);
-    /* needed? letter-spacing:var(--letter-spacing); */
-    background-repeat: no-repeat;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	line-height:var(--line-height); /* also for: letter-spacing? */
+	background-repeat: no-repeat;
 }
 html {
-    block-size: 100%;
-
-    word-break:break-word;
-    overflow-wrap:break-word;
-
-    -webkit-hyphens: auto;
-    hyphens: auto;
-
-    tab-size: 4;
-    --line-height: calc(1em + .5rem);
-    /* needed? --letter-spacing: normal; */
-    -webkit-tap-highlight-color: transparent;
-
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; /* -apple-system needed anymore? */
-    font-size: calc(12px + .3vw);
-
-    scrollbar-gutter: stable;
-    overflow-y: auto;
+	block-size: 100%;
+	word-break:break-word;
+	overflow-wrap:break-word;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	tab-size: 4;
+	--line-height: calc(1em + .5rem);
+	-webkit-tap-highlight-color: transparent;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; /* -apple-system needed anymore? */
+	font-size: calc(12px + .3vw);
+	scrollbar-gutter: stable;
+	overflow-y: auto;
 }
 body {
-    margin:auto;
-    min-block-size: 100%;
-    font-size:max(1rem, 16px); /* 16px => safari ios dont zoom in */
+	margin:auto;
+	min-block-size: 100%;
+	font-size:max(1rem, 16px); /* 16px => safari ios dont zoom in */
 }
 h1, h2, h3, h4, h5, h6 {
-    margin-top:1em;
-    margin-bottom:1em;
+	margin-top:1em;
+	margin-bottom:1em;
 }
 hr {
-    border-style:solid;
-    border-width:0 0 1px 0;
-    border-top-width:0 !important;
+	border-style:solid;
+	border-width:0 0 1px 0;
+	border-top-width:0 !important;
 }
 img, svg, video, canvas {
-    max-width:100%;
-    max-width:-moz-available;
-    max-width:-webkit-fill-available;
-    max-width:stretch;
-    object-fit:cover;
-    height: auto;
+	max-width:100%;
+	max-width:-moz-available;
+	max-width:-webkit-fill-available;
+	max-width:stretch;
+	object-fit:cover;
+	height: auto;
 }
 audio, video, iframe {
-    width: 100%;
-    width:-moz-available;
-    width:-webkit-fill-available;
-    width:stretch;
+	width: 100%;
+	width:-moz-available;
+	width:-webkit-fill-available;
+	width:stretch;
 }
 video { background-color:#aaa; }
-
-script, style { /* if displaying script or javascript */
-    white-space: pre;
-    font-family: monospace;
-    margin-block-start: 1rem;
-    margin-block-end: 1rem;
-    overflow:auto;
+script, style {
+	white-space: pre;
+	font-family: monospace;
+	margin-block-start: 1rem;
+	margin-block-end: 1rem;
+	overflow:auto;
 }
-
 /* table */
 table {
-    border-collapse: collapse;
-    border-spacing: 0; /* if not collapsed, border-spacing defaults to 0 */
-    font-variant-numeric: tabular-nums;
+	border-collapse: collapse;
+	border-spacing: 0; /* if not collapsed, border-spacing defaults to 0 */
+	font-variant-numeric: tabular-nums;
 }
 th {
-    text-align: inherit;
-    text-align: -webkit-match-parent; /* inherit not working in safari */
+	text-align: inherit;
+	text-align: -webkit-match-parent; /* inherit not working in safari */
 }
-
-
 /* nav */
 nav a { text-decoration:none; } /* display:block? color:inherit? */
 nav li { list-style: none; }
@@ -83,34 +72,32 @@ nav > ul { padding-left:0; }
 
 /* clickable */
 select, summary, label, button:not(:disabled), [type=checkbox], [type=radio], [type=file], .btn {
-    cursor:pointer;
+	cursor:pointer;
 }
 
-[inert] {
-    opacity:.4;
-}
+[inert] { opacity:.4; }
 
 /* form */
 input, textarea, select, button, .btn {
-    padding:.2em;
-    border:1px solid rgba(0,0,0,.5);
-    font: inherit; /* inherits line-height which is stronger than `* { line-height:var(--line-height); }` */
-    /*
-    try to match immutable select-line-height
-    in chrome:1.22, in ff:1.17 (best fit line-height:1.19?)
-    "normal" does not work in chrome unlike appereance:none
-    */
-    /* line-height:normal; zzz */
-    line-height: var(--line-height);
-    --line-height:normal;
+	padding:.2em;
+	border:1px solid rgba(0,0,0,.5);
+	font: inherit; /* inherits line-height which is stronger than `* { line-height:var(--line-height); }` */
+	/*
+	try to match immutable select-line-height
+	in chrome:1.22, in ff:1.17 (best fit line-height:1.19?)
+	"normal" does not work in chrome unlike appereance:none
+	*/
+	/* line-height:normal; zzz */
+	line-height: var(--line-height);
+	--line-height:normal;
 }
 button, .btn {
-    padding-left:.7em;
-    padding-right:.7em;
-    /* text-decoration:none; if a.btn, or a button zzz in classless*/
+	padding-left:.7em;
+	padding-right:.7em;
+	/* text-decoration:none; if a.btn, or a button zzz in classless*/
 }
 select { background-color:Field; }
 textarea { resize: vertical; }
 input, textarea { width:13rem; }
-[type=radio], [type=checkbox], [type=file] { width:auto; }  /* todo: incomplete? */
+[type=radio], [type=checkbox], [type=file], [type=date], [type=time], [type=datetime-local] { width:auto; }  /* todo: incomplete? */
 [type=range] { vertical-align:middle }

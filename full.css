@@ -1,7 +1,11 @@
 
 @import "../norm.css/norm.css";
-@import "../norm.css/beta.css";
 @import "./base.css";
-@import "./beta.css";
 @import "./nomotion.css" prefers-reduced-motion;
 @import "./print.css" print;
+
+/*
+body {
+	background-image: var(--report-to);
+}
+*/
