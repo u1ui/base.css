@@ -3,9 +3,3 @@
 @import "./base.css";
 @import "./nomotion.css" prefers-reduced-motion;
 @import "./print.css" print;
-
-/*
-body {
-	background-image: var(--report-to);
-}
-*/
