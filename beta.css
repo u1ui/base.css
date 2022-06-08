@@ -2,15 +2,13 @@
 	background-size: contain; /* or cover? */
 	background-position: 50% 50%;
 }
-textarea {
-	vertical-align: baseline;
-	vertical-align: -webkit-baseline-middle;
-	/* display: inline-table; chrome makes align with the first line, but unresizable */
-}
 [type=number] { text-align: end; }
 legend {
 	padding-left: .3em;
 	padding-right: .3em;
+}
+tbody, thead, tfoot {
+	vertical-align: inherit;
 }
 
 /*
