@@ -1,17 +1,17 @@
 # base.css
 Usefull css defaults
 
+## Demos
+
+[nomotion.html](https://raw.githack.com/u1ui/base.css/main/tests/nomotion.html)  
+[test.html](https://raw.githack.com/u1ui/base.css/main/tests/test.html)  
+
 ## Description
 
 - lightweight
 - based on https://github.com/u1ui/norm.css.  
 - IE11 not supported
 - There is a beta.css for styles not yet definite
-
-## Demos
-
-https://raw.githack.com/u1ui/base.css/main/tests/nomotion.html  
-https://raw.githack.com/u1ui/base.css/main/tests/test.html  
 
 ## Resources
 
