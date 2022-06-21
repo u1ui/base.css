@@ -11,7 +11,7 @@ Usefull css defaults
 ## Demos
 
 https://raw.githack.com/u1ui/base.css/main/tests/nomotion.html  
-https://raw.githack.com/u1ui/base.css/main/tests/test.html
+https://raw.githack.com/u1ui/base.css/main/tests/test.html  
 
 ## Resources
 
@@ -20,11 +20,6 @@ https://github.com/csstools/sanitize.css/blob/main/sanitize.css
 https://github.com/adamgruber/opinionate.css/blob/master/opinionate.css
 
 https://github.com/elad2412/the-new-css-reset/blob/main/css/reset.css
-
-## Demo
-
-https://raw.githack.com/u1ui/base.css/main/tests/nomotion.html  
-https://raw.githack.com/u1ui/base.css/main/tests/test.html  
 
 ## About
 
