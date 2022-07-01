@@ -3,8 +3,8 @@ Usefull css defaults
 
 ## Demos
 
-[nomotion.html](https://raw.githack.com/u1ui/base.css/main/tests/nomotion.html)  
-[test.html](https://raw.githack.com/u1ui/base.css/main/tests/test.html)  
+[nomotion.html](http://gcdn.li/u1ui/base.css@main/tests/nomotion.html)  
+[test.html](http://gcdn.li/u1ui/base.css@main/tests/test.html)  
 
 ## Description
 
