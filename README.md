@@ -1,5 +1,5 @@
 # base.css
-Usefull css defaults
+⏚ Usefull css defaults
 
 ## Demos
 
