@@ -102,9 +102,8 @@ textarea {
 	vertical-align: -webkit-baseline-middle;
 	/* display: inline-table; chrome makes align with the first line, but unresizable */
 }
-:where(textarea) { resize: none; }
-:where(textarea:hover) { resize:vertical; }
-
+textarea { resize: vertical; }
+textarea:not(:hover) { resize:none; }
 
 input, textarea { width:13rem; }
 [type=radio], [type=checkbox], [type=file], [type=date], [type=time], [type=datetime-local] { width:auto; }  /* todo: incomplete? */
