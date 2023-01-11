@@ -10,7 +10,7 @@ html {
 	overflow-wrap:break-word;
 	-webkit-hyphens: auto;
 	hyphens: auto;
-	/* hyphenate-limit-chars:auto 4; todo: awaiting support (chrome 109)  */
+	hyphenate-limit-chars:auto 3; /* only chrome >= 109 */
 	tab-size: 4;
 	--line-height: calc(1em + .5rem);
 	-webkit-tap-highlight-color: transparent;
