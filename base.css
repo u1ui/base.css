@@ -38,7 +38,6 @@ img, svg, video, canvas {
 	max-width:100%;
 	max-width:-moz-available;
 	max-width:-webkit-fill-available;
-	max-width:stretch;
 	object-fit:cover;
 	height: auto;
 }
@@ -46,7 +45,6 @@ audio, video, iframe {
 	width: 100%;
 	width:-moz-available;
 	width:-webkit-fill-available;
-	width:stretch;
 }
 video { background-color:#aaa; }
 script, style {
