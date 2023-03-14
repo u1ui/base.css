@@ -90,6 +90,9 @@
   .tableDemo td , .tableDemo th {
     border:1px solid;
   }
+  .tableDemo .batman {
+    background-color:#ddd;
+  }
   </style>
 </section>
 
@@ -231,7 +234,10 @@
         <label>
           <input type="file" id="input-file-multiple" multiple> File (multiple)
         </label>
-        <button type="button">I'm a Button</button> <input> <select><option>1</select>
+        <label>
+          <button type="button">Button</button> <input style="width:5rem"> <select><option>1</select>
+          inline
+        </label>
         <br>
         <button type="button" disabled>I'm a disabled Button</button>
     </fieldset>
@@ -270,7 +276,7 @@
   <br>
   IMG too big scales down (also has margin:1rem):
   <br>
-  <img width=1000 height=500 style="background:#eee; margin:1rem">
+  <img width=1000 height=500 style="background:#eee; margin:1rem" alt="">
   <br>
   AUDIO / VIDEO / IFRAME width 100%:
   <br>
@@ -301,9 +307,9 @@
         </label>
       </p>
       <menu>
-        <button value="cancel">Cancel</button>
-        <button id="confirmBtn" value="default">Confirm</button>
-        <button type=button onclick="this.closest('dialog').append('test '.repeat(10000))">Add lot of contents</button>
+        <li><button value="cancel">Cancel</button>
+        <li><button id="confirmBtn" value="default">Confirm</button>
+        <li><button type=button onclick="this.closest('dialog').append('test '.repeat(10000))">Add lot of contents</button>
       </menu>
     </form>
   </dialog>
