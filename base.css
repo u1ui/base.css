@@ -34,17 +34,14 @@ hr {
 	border-width:0 0 1px 0;
 	border-top-width:0 !important;
 }
-img, svg, video, canvas {
-	max-width:100%;
-	max-width:-moz-available;
-	max-width:-webkit-fill-available;
-	object-fit:cover;
-	height: auto;
-}
-audio, video, iframe {
+img, svg, video, canvas, audio, video, iframe {
 	width: 100%;
 	width:-moz-available;
 	width:-webkit-fill-available;
+}
+img, svg, video, canvas {
+	object-fit:cover;
+	height: auto;
 }
 video { background-color:#aaa; }
 script, style {
@@ -105,6 +102,5 @@ textarea { resize: vertical; }
 textarea:not(:hover) { resize:none; }
 
 input, textarea { width:13rem; }
-/* [type=radio], [type=checkbox], [type=file], [type=date], [type=time], [type=datetime-local], [type=color] { width:auto; }  /* todo: incomplete? */
 [type=radio], [type=checkbox], [type=file], [type=date], [type=time], [type=datetime-local], [type=color] { width:revert; }  /* todo: incomplete? */
 [type=range] { vertical-align:middle }
