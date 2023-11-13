@@ -36,10 +36,15 @@ hr {
 	border-width:0 0 1px 0;
 	border-top-width:0 !important;
 }
-img, svg, video, canvas, audio, video, iframe {
+video, audio, video, iframe {
 	width: 100%;
 	width:-moz-available;
 	width:-webkit-fill-available;
+}
+img, svg, canvas {
+	max-width: 100%;
+	max-width:-moz-available;
+	max-width:-webkit-fill-available;
 }
 img, svg, video, canvas {
 	object-fit:cover;
