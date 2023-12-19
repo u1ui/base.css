@@ -43,8 +43,8 @@ video, audio, video, iframe {
 }
 img, svg, canvas {
 	max-width: 100%;
-	max-width:-moz-available;
-	max-width:-webkit-fill-available;
+	/* max-width:-moz-available; incompatibility causes problems
+	max-width:-webkit-fill-available; */
 }
 img, svg, video, canvas {
 	object-fit:cover;
