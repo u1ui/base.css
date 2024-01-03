@@ -25,11 +25,10 @@ body {
 	font-size:max(1rem, 16px); /* 16px => safari ios dont zoom in */
 }
 h1, h2, h3, h4, h5, h6 {
-	margin-top:1em;
-	margin-bottom:1em;
+	margin-block:1em;
 }
 h1, h2, h3, h4, h5, h6, figcaption, blockquote, legend, caption { /* th? */
-	text-wrap: balance; /* chrome 113? */
+	text-wrap: balance; /* chrome 114, ff121, sf17.4? */
 }
 hr {
 	border-style:solid;
@@ -103,10 +102,9 @@ select { background-color:Field; }
 textarea {
 	vertical-align: baseline;
 	vertical-align: -webkit-baseline-middle;
-	/* display: inline-table; chrome makes align with the first line, but unresizable */
 }
 textarea { resize: vertical; }
-textarea:not(:hover) { resize:none; }
+/* textarea:not(:hover) { resize:none; } some browsers may stop resizing if mouse resize is none */
 
 input, textarea { width:13rem; }
 [type=radio], [type=checkbox], [type=file], [type=date], [type=time], [type=datetime-local], [type=color] { width:revert; }  /* todo: incomplete? */
