@@ -16,7 +16,7 @@
 
 https://github.com/csstools/sanitize.css/blob/main/sanitize.css  
 https://github.com/adamgruber/opinionate.css/blob/master/opinionate.css  
-https://github.com/elad2412/the-new-css-reset/blob/main/css/reset.css  
+https://github.com/elad2412/the-new-css-reset/blob/main/css/reset.css
 
 ## About
 
