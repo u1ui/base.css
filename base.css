@@ -37,8 +37,8 @@ hr {
 }
 video, audio, video, iframe {
 	width: 100%;
-	width:-moz-available;
-	width:-webkit-fill-available;
+	/*width:-moz-available;
+	width:-webkit-fill-available;*/
 }
 img, svg, canvas {
 	max-width: 100%;

@@ -2,7 +2,7 @@
 Usefull css defaults
 
 
-## Ussage
+## Usage
 
 ```html
 <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/u1ui/norm.css/norm.min.css">
