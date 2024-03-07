@@ -53,8 +53,7 @@ video { background-color:#aaa; }
 script, style {
 	white-space: pre;
 	font-family: monospace;
-	margin-block-start: 1rem;
-	margin-block-end: 1rem;
+	margin-block: 1rem;
 	overflow:auto;
 }
 /* table */
@@ -70,8 +69,10 @@ th {
 /* nav */
 nav a { text-decoration:none; } /* display:block? color:inherit? */
 nav li { list-style: none; }
-nav ul { padding-left:1.5em; }
-nav > ul { padding-left:0; }
+/* nav ul { padding-left:1.5em; }
+nav > ul { padding-left:0; } */
+nav ul { padding-inline-start:1.5em; }
+nav > ul { padding-inline-start:0; }
 
 /* clickable */
 select, summary, label, button:not(:disabled), [type=checkbox], [type=radio], [type=file], .btn {
@@ -94,8 +95,7 @@ input, textarea, select, button, .btn {
 	--line-height:normal;
 }
 button, .btn {
-	padding-left:.7em;
-	padding-right:.7em;
+	padding-inline:.7em;
 	/* text-decoration:none; if a.btn, or a button zzz in classless*/
 }
 select { background-color:Field; }
@@ -106,6 +106,6 @@ textarea {
 textarea { resize: vertical; }
 /* textarea:not(:hover) { resize:none; } some browsers may stop resizing if mouse resize is none */
 
-input, textarea { width:13rem; }
-[type=radio], [type=checkbox], [type=file], [type=date], [type=time], [type=datetime-local], [type=color] { width:revert; }  /* todo: incomplete? */
+input, textarea { inline-size:13rem; }
+[type=radio], [type=checkbox], [type=file], [type=date], [type=time], [type=datetime-local], [type=color] { inline-size:revert; }  /* todo: incomplete? */
 [type=range] { vertical-align:middle }
