@@ -10,7 +10,7 @@ html {
 	overflow-wrap:break-word;
 	-webkit-hyphens: auto;
 	hyphens: auto;
-	hyphenate-limit-chars:auto 3; /* only chrome >= 109 */
+	hyphenate-limit-chars:auto 3; /* only chrome */
 	tab-size: 4;
 	--line-height: calc(1em + .5rem);
 	-webkit-tap-highlight-color: transparent;
@@ -28,7 +28,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-block:1em;
 }
 h1, h2, h3, h4, h5, h6, figcaption, blockquote, legend, caption { /* th? */
-	text-wrap: balance; /* chrome 114, ff121, sf17.4? */
+	text-wrap: balance;
+}
+p, li {
+	text-wrap: pretty;
 }
 hr {
 	border-style:solid;
@@ -36,14 +39,10 @@ hr {
 	border-top-width:0 !important;
 }
 video, audio, video, iframe {
-	width: 100%;
-	/*width:-moz-available;
-	width:-webkit-fill-available;*/
+	width: 100%; /* max-width:-moz-available / -webkit-fill-available; incompatibility causes problems */
 }
 img, svg, canvas {
 	max-width: 100%;
-	/* max-width:-moz-available; incompatibility causes problems
-	max-width:-webkit-fill-available; */
 }
 img, svg, video, canvas {
 	object-fit:cover;
@@ -69,8 +68,6 @@ th {
 /* nav */
 nav a { text-decoration:none; } /* display:block? color:inherit? */
 nav li { list-style: none; }
-/* nav ul { padding-left:1.5em; }
-nav > ul { padding-left:0; } */
 nav ul { padding-inline-start:1.5em; }
 nav > ul { padding-inline-start:0; }
 
@@ -85,18 +82,17 @@ select, summary, label, button:not(:disabled), [type=checkbox], [type=radio], [t
 input, textarea, select, button, .btn {
 	padding:.2em;
 	border:1px solid rgba(0,0,0,.5);
-	font: inherit; /* inherits line-height which is stronger than `* { line-height:var(--line-height); }` */
+	font: inherit;
 	/*
 	try to match immutable select-line-height
 	in chrome:1.22, in ff:1.17 (best fit line-height:1.19?)
-	"normal" does not work in chrome unlike appereance:none
+	"normal" does not work in chrome unless not -webkit-appearance: none;
 	*/
-	line-height:var(--line-height);
+	line-height:var(--line-height); /* needed as font:inherit does inherit line-height */
 	--line-height:normal;
 }
 button, .btn {
 	padding-inline:.7em;
-	/* text-decoration:none; if a.btn, or a button zzz in classless*/
 }
 select { background-color:Field; }
 textarea {
